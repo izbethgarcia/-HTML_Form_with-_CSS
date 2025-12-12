@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="Lizbeth Garcia">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <form action="results.html" method=get>
+<div>       
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="First Name" required>
+</div>
+
+<div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+</div>
+
+<div>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" min="5" max="120" step="2" placeholder="Enter Age" required>
+
+<div>
+    <label for="date">Birthday</label>
+        <input type="date" name="date" id="date" required min="2022-01-01">
+</div>
+
+<div>
+    <label for="phoneNumber">Phone</label>
+    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="206-456-7890">
+</div>
+
+<div>
+    Favorite Season:
+    <div>
+        <label>
+            Winter
+            <input type="checkbox" name="Winter" id="Winter">
+        </label>
+    </div>
+    <div>
+        <label>
+            Summer
+            <input type="checkbox" name="Summer" id="Summer">
+        </label>
+    </div>
+</div>
+
+<div>
+    <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Username" required>  
+</div>
+
+
+<div>
+    <p>Do you prefer Night time or Daytime?</p>
+    <label for="night">Night</label>
+    <input type="radio" name="timePreference" id="night" value="Night">
+
+    <label for="day">Day</label>
+    <input type="radio" name="timePreference" id="day" value="Day">
+</div>
+
+<div>
+    <label for="faveDay">Favorite Weekday</label>
+    <select name="faveDay" id="faveDay">
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+        <option value="Sunday">Sunday</option>
+    </select>
+</div>
+
+<div>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" required>
+</div>
+
+<div>
+    <label for="opinion">Tell us what you think</label>
+    <textarea name="opinion" id="opinion"></textarea>
+</div>
+
+<div>
+<form>
+    <label for="webUrl">WebsiteURL</label>
+    <input type="url" name="webUrl" id="webUrl" placeholder="https:/example.com">
+</div>
+
+<div>
+    <label for="favcolor">Favorite Color</label>
+    <input type="color" name="favcolor" id="favcolor">
+</div>
+  <input type="hidden" name="sessionId" id="sessionId" value="SecretRandomNumberUsedtoManageTheSession">
+
+<div>
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+</div> 
+</form>
+
+<div>
+<form action="results.html" method="GET" enctype="multipart/form-data">
+    <input type="file" name="fileUpload" id="fileUpload">
+</form>
+</div>
+</body>
+</html>
